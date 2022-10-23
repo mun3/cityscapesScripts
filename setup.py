@@ -8,8 +8,8 @@
 # export CFLAGS="-I /usr/local/lib/python3.6/site-packages/numpy/core/include $CFLAGS"
 
 import os
-from setuptools import setup, find_packages
-has_cython = True
+from setuptools import find_packages, setup
+has_cython = True # assume Cython is installed
 
 try:
     from Cython.Build import cythonize
